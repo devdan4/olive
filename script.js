@@ -1,9 +1,18 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector('.burger');
-  const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".burger");
+  const navLinks = document.querySelector(".nav-links");
 
-  burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+  burger.addEventListener("click", function (e) {
+    e.stopPropagation(); // Prevent the document click from firing
+    navLinks.classList.toggle("active");
+  });
+
+  // Close nav if clicking outside
+  document.addEventListener("click", function (e) {
+    const isClickInsideNav = navLinks.contains(e.target) || burger.contains(e.target);
+    if (!isClickInsideNav) {
+      navLinks.classList.remove("active");
+    }
   });
 });
 
