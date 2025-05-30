@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('YxZ5CTHZFIMvmuvmW');
+    })();    
+  </script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo-no-background.png" alt="logo" />
+    </a>
+    <button class="burger" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="hero">
+      <h1>Cahit Palamutcu Olive Oil</h1><br />
+      <p>
+        Nestled in the sun-soaked hills of the Kuşadası region in Turkey, our family-run olive oil company has been
+        cultivating excellence for generations. We take pride in producing olive oil that reflects the purity, flavor,
+        and rich heritage of our land. From harvest to bottle, every step is rooted in sustainable practices and
+        timeless tradition — delivering quality you can taste in every drop.
+      </p><br />
+
+      <div class="image-row-vertical">
+        <figure>
+          <img src="images/olive1.jpeg" alt="Founder picking olives during harvest" />
+          <figcaption>Our founder carefully picking olives during the harvest season, ensuring only the finest fruits
+            make it to production.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/olive2.jpeg" alt="Founder with 200-year-old olive tree" />
+          <figcaption>The founder standing proudly beside the oldest olive tree on the plantation — a magnificent
+            200-year-old tree still bearing fruit.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <br/>
+        <p>Have questions or want to get in touch? <a href="contact.html">Contact us here</a>.</p>
+      </div>
+
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; Cahit Palamutcu</p>
+  </footer>
+</body>
+
+</html>
