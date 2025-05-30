@@ -23,7 +23,11 @@ nav {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Make sure it stays above other content */
+}
 
 main {
   padding: 2em 1em;
@@ -222,12 +226,16 @@ body {
     display: block;
   }
 
+  nav {
+    padding: 0.5em 1em;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
     gap: 1em;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 2em;
     background: #f8f8f8;
     padding: 1em;
