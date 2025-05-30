@@ -7,6 +7,13 @@ body {
   line-height: 1.6;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 nav {
   background-color: #f8f8f8;
   padding: 1em;
@@ -252,6 +259,7 @@ body {
 
 @media (max-width: 600px) {
   .contact-form {
+    width: 90%;
     padding: 1.5em 1em;
     box-shadow: none;
   }
@@ -268,7 +276,12 @@ body {
 
   .contact-form input,
   .contact-form textarea {
+    font-size: 0.95em;
     padding: 0.7em;
+  }
+
+  .contact-form button {
+    padding: 0.8em 1.5em;
     font-size: 0.95em;
   }
 
@@ -292,6 +305,10 @@ body {
   }
 }
 
-
+.contact-form {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
 
 
