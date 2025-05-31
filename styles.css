@@ -169,12 +169,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #f8f8f8;
-  padding: 1em 2em;
+  padding: 0em 2em;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-  height: 70px;
+  height: 85px;
   display: block;
 }
 
@@ -227,7 +227,7 @@ body {
   }
 
   nav {
-    padding: 0.5em 1em;
+    padding: 0em 1em;
   }
 
   .nav-links {
